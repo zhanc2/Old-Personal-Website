@@ -44,6 +44,14 @@ body {
     margin-bottom: 20px;
     margin-top: 100px;
 }
+.project-link {
+    text-decoration: none;
+    color: rgb(162, 176, 219);
+    transition: 0.2s;
+}
+.project-link:hover {
+    color: black;
+}
 .project-content {
     position: relative;
     height: 100%;
