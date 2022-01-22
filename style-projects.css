@@ -32,7 +32,7 @@ body {
     100% {opacity: 1;}
 }
 .projectsContainer {
-
+    color: rgb(162, 176, 219);
 }
 .project {
     text-align: center;
@@ -41,7 +41,7 @@ body {
 }
 .project-title {
     font-size: 120%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 100px;
 }
 .project-content {
@@ -60,6 +60,7 @@ body {
     height: 100%;
     /*overflow-wrap: break-word;*/
     font-size: 110%;
+    text-align: justify;
 }
 
 .linksDiv {
