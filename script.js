@@ -1,3 +1,4 @@
+let slideIndexes = [1, 1, 1];
 
 
 function openCloseSideBar() {
@@ -14,4 +15,36 @@ function openCloseSideBar() {
         openSideBar.style.left = "200px";
     }
 
+}
+
+function onStart() {
+    showSlides(1, 0);
+    showSlides(1, 1);
+}
+
+function plusSlides(num, whichGallery) {
+    showSlides(slideIndexes[whichGallery] += num, whichGallery);
+}
+
+function showSlides(num, whichGallery) {
+    let i;
+    let className = "gallery-slide-" + String(whichGallery+1);
+    // className = "gallery-slide-1"
+    // window.alert(className);
+    let slides = document.getElementsByClassName(className);
+
+    // window.alert(slides.length)
+
+    if (num > slides.length) {
+        slideIndexes[whichGallery] = 1;
+    }
+    if (num < 1) {
+        slideIndexes[whichGallery] = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    // window.alert("is this working")
+    // slides[slideIndexes[whichGallery] - 1].style.display = "inline-block";
+    slides[slideIndexes[whichGallery]-1].style.display = "inline-block";
 }

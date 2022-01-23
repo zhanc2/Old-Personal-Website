@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style-projects.css">
     <script rel="script" src="script.js"></script>
 </head>
-<body>
+<body onload="onStart()">
 
 <div class="title">Projects</div>
 
@@ -27,32 +27,93 @@
 
 <div class="projectsContainer">
     <div class="project">
-        <div class="project-title"><a href="https://github.com/zhanc2/Survive-The-Night" class="project-link">Survive The Night</a></div>
         <div class="project-content">
-            <div class="project-text">A classic top-down 2D zombie shooter game. This game was made in Python using the Pygame graphics library in conjunction with all that Python's object-oriented programming offers. All mechanics and physics were written/drawn from scratch.</div>
+            <div class="project-text-container">
+                <div class="project-title"><a href="https://github.com/zhanc2/Survive-The-Night" class="project-link">Survive The Night</a></div>
+                <div class="project-text">A classic top-down pixel-art 2D zombie shooter game. This game was made in Python using the Pygame graphics library in conjunction with all that Python's object-oriented programming offers. All mechanics and physics were written/drawn from scratch.</div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-container-display">
+                    <div class="gallery-slide-1">
+                        <video src="videos/STN-Video-1.mp4" controls style="width: 100%"></video>
+                    </div>
+                    <div class="gallery-slide-1">
+                        <img src="images/STN-SS-1.png" alt="" style="width: 100%">
+                    </div>
+                    <div class="gallery-slide-1">
+                        <img src="images/STN-SS-2.png" alt="" style="width: 100%">
+                    </div>
+                    <div class="gallery-slide-1">
+                        <img src="images/STN-SS-3.png" alt="" style="width: 100%">
+                    </div>
+                    <div class="gallery-slide-1">
+                        <img src="images/STN-SS-4.png" alt="" style="width: 100%">
+                    </div>
+                    <div class="gallery-slide-1">
+                        <img src="images/STN-SS-5.png" alt="" style="width: 100%">
+                    </div>
+                    <a class="gallery-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="gallery-next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                <div class="bottom-row">
+                    <div class="little-circle"></div>
+                    <div class="little-circle"></div>
+                    <div class="little-circle"></div>
+                    <div class="little-circle"></div>
+                    <div class="little-circle"></div>
+                    <div class="little-circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-content">
+            <div class="gallery-container">
+                <div class="gallery-slide-2">
+                    <video src="videos/PBS-Video-1.mp4" controls style="width: 100%"></video>
+                </div>
+                <div class="gallery-slide-2">
+                    <video src="videos/PBS-Video-2.mp4" controls style="width: 100%"></video>
+                </div>
+                <div class="gallery-slide-2">
+                    <img src="images/PBS-SS-1.png" alt="" style="width: 100%">
+                </div>
+                <div class="gallery-slide-2">
+                    <img src="images/PBS-SS-2.png" alt="" style="width: 100%">
+                </div>
+                <div class="gallery-slide-2">
+                    <img src="images/PBS-SS-3.png" alt="" style="width: 100%">
+                </div>
+                <a class="gallery-prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="gallery-next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <div class="project-text-container">
+                <div class="project-title"><a href="https://github.com/zhanc2/Physics-Ball-Simulation" class="project-link">Physics Ball Simulation</a></div>
+                <div class="project-text">A physics simulation of ball that can be customized to have any amount of shapes to interact with. Written in Python using the graphics library Pygame. The physics were written from scratch.</div>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project-content">
+            <div class="project-text-container">
+                <div class="project-title"><a href="https://github.com/zhanc2/Personal-Website" class="project-link">This Website</a></div>
+                <div class="project-text">That's right! The website you are currently reading from was made from scratch using HTML, CSS, and Javascript. No external libraries were used for the animations.</div>
+            </div>
             <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640" alt="placeholder" width="300px" height="100px">
         </div>
     </div>
     <div class="project">
-        <div class="project-title"><a href="https://github.com/zhanc2/Physics-Ball-Simulation" class="project-link">Physics Ball Simulation</a></div>
         <div class="project-content">
             <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640" alt="placeholder" width="300px" height="100px">
-            <div class="project-text">A physics simulation of ball that can be customized to have any amount of shapes to interact with. Written in Python using the graphics library Pygame. The physics were written from scratch.</div>
+            <div class="project-text-container">
+                <div class="project-title"><a href="https://github.com/zhanc2/Valorant-Stat-Checker" class="project-link">Discord Bot for Valorant Stats</a></div>
+                <div class="project-text">A bot for the communication platform "Discord" that obtains player statistics. This was written in Python using Discord's API as well as Python's libraries for reading HTML. It was made for personal use.</div>
+            </div>
         </div>
     </div>
     <div class="project">
-        <div class="project-title"><a href="https://github.com/zhanc2/Personal-Website" class="project-link">This Website</a></div>
-        <div class="project-content">
-            <div class="project-text">That's right! The website you are currently reading from was made from scratch using HTML, CSS, and Javascript. No external libraries were used for the animations.</div>
-            <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640" alt="placeholder" width="300px" height="100px">
-        </div>
-    </div>
-    <div class="project">
-        <div class="project-title"><a href="https://github.com/zhanc2/Valorant-Stat-Checker" class="project-link">Discord Bot for Valorant Stats</a></div>
-        <div class="project-content">
-            <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=640" alt="placeholder" width="300px" height="100px">
-            <div class="project-text">A bot for the communication platform "Discord" that obtains player statistics. This was written in Python using Discord's API as well as Python's libraries for reading HTML.</div>
-        </div>
+        <div class="project-title"><a href="https://github.com/zhanc2/CCC-Problems" class="project-link">CCC (Canadian Computing Competition) Solutions</a></div>
+        <div id="ccc-problems">These are my solutions for the CCC problems that I've solved. They are all written in C++. Currently, the problems: "Searching for Strings", "Lunch Concert", "Arithmetic Square", and "Tin Can Telephone" are unfinished.</div>
     </div>
 </div>
 
