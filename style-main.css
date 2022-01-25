@@ -110,6 +110,26 @@ body {
     font-size: 200%;
 }
 
+.about-me {
+    display: flex;
+    align-items: center;
+    /*align-content: center;*/
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font);
+    margin-top: 50px;
+    color: rgb(162, 176, 219);
+
+}
+.about-me-text {
+    width: 20%;
+    height: 20%;
+    margin-right: 15px;
+}
+.about-me-text-paragraph {
+    text-align: justify;
+}
+
 .linksDiv {
     padding: 5px;
     transition: 0.3s;
