@@ -7,6 +7,23 @@
 body {
     background-color: rgb(59, 94, 156);
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen {
+    /*inset: 0;*/
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*border: black solid 1px;*/
+    background-image: url("images/placeholder-main-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
 }
 
 .openSideBarRects {
@@ -14,11 +31,11 @@ body {
 }
 #little-triangle-on-button {
     position: absolute;
-    left: 0;
+    left: 3px;
     width: 0;
     height: 0;
     z-index: 1;
-    bottom: 40px;
+    top: calc(50% - 4px);
     border-top: 8px solid transparent;
     border-left: 12px solid rgb(3, 57, 252);
     border-bottom: 8px solid transparent;
@@ -26,44 +43,39 @@ body {
 #triangle-right-top {
     position: absolute;
     left: 0;
-    bottom: 82px;
-    border-top: 18px solid transparent;
-    border-left: 18px solid rgb(13, 29, 148);
-    border-bottom: 18px solid transparent;
+    bottom: 91px;
+    border-top: 20px solid transparent;
+    border-left: 24px solid rgb(13, 29, 148);
+    border-bottom: 20px solid transparent;
 }
 #triangle-right-down {
     position: absolute;
     left: 0;
-    top: 82px;
-    border-top: 18px solid transparent;
-    border-left: 18px solid rgb(13, 29, 148);
-    border-bottom: 18px solid transparent;
+    top: 91px;
+    border-top: 20px solid transparent;
+    border-left: 24px solid rgb(13, 29, 148);
+    border-bottom: 20px solid transparent;
 }
 #rectangle-main {
     position: relative;
     left: 5px;
-    width: 18px;
-    height: 100px;
+    width: 24px;
+    height: 110px;
     outline: none;
     cursor: pointer;
     border: none;
 }
-#rectangle-bar-1 {
+.rectangle-bar {
     position: relative;
     bottom: 100%;
-    width: 5px;
+    width: 8px;
     height: 100%;
-}
-#rectangle-bar-2 {
-    position: relative;
-    bottom: 100%;
-    width: 5px;
-    height: 100%;
+    cursor: pointer;
 }
 #open-sidebar-button {
     position: fixed;
     left: 0;
-    top: calc(50% - 50px);
+    top: calc(50% - 55px);
     height: 100%;
     transition: left 0.2s;
     z-index: 2;
@@ -91,7 +103,7 @@ body {
     font-size: 300%;
     margin-bottom: 80px;
 }
-.mainInfo {
+.mainTitleInfo {
     font-size: 150%;
 }
 
@@ -114,6 +126,7 @@ body {
 #link-home-div {
     background-color: rgb(199, 202, 214);
     color: black;
+    padding: 5px;
 }
 
 .reveal-text,

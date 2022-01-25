@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%; width: 100%">
 <head>
     <meta charset="UTF-8">
     <title>Charles Zhang</title>
@@ -8,24 +8,27 @@
 </head>
 <body>
 
+<div class="main-screen">
+    <div id="mainMessage">
+        <div id="mainTitle"><span class="reveal-text">Charles Zhang</span></div>
+        <div class="mainTitleInfo"><span class="reveal-text">Student, Programmer, Saxophonist/Clarinetist, Debater</span></div>
+    </div>
+</div>
+
+
 <div id="open-sidebar-button">
     <button class="openSideBarRects" id="rectangle-main" onclick="openCloseSideBar()">
         <i id="little-triangle-on-button"></i>
         <i id="triangle-right-top"></i>
         <i id="triangle-right-down"></i>
     </button>
-    <div class="openSideBarRects" id="rectangle-bar-1"></div>
-    <div class="openSideBarRects" id="rectangle-bar-2"></div>
+    <div class="openSideBarRects rectangle-bar" onclick="openCloseSideBar()"></div>
+    <div class="openSideBarRects rectangle-bar" onclick="openCloseSideBar()"></div>
     <div id="sideBar">
         <a href="index.html" id="link-home"><div id="link-home-div">Home</div></a>
         <a href="projects.html" class="links"><div class="linksDiv">Projects</div></a>
         <a href="https://github.com/zhanc2" class="links"><div class="linksDiv">Github</div></a>
     </div>
-</div>
-
-<div id="mainMessage">
-    <div id="mainTitle"><span class="reveal-text">Charles Zhang</span></div>
-    <div class="mainInfo"><span class="reveal-text">Student, Programmer, Saxophonist/Clarinetist, Debater</span></div>
 </div>
 
 </body>
