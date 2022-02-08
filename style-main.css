@@ -109,6 +109,15 @@ body {
 .mainTitleInfo {
     font-size: 200%;
 }
+#ct-link {
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(162, 176, 219);
+    transition: 0.3s;
+}
+#ct-link:hover {
+    color: black;
+}
 
 .about-me {
     display: flex;
